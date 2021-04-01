@@ -43,4 +43,13 @@ WHERE (
 GROUP BY gender
 ORDER BY gender;
 
-
+# use table alias to use WHERE clause with an aggregate function (i.e. SUM() or COUNT() )
+SELECT COUNT(*), gender
+FROM employees AS e
+WHERE (
+                  e.first_name = 'Irena'
+              OR e.first_name = 'Vidya'
+              OR e.first_name = 'Maya'
+          )
+GROUP BY gender
+ORDER BY gender;
