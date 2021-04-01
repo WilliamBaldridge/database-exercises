@@ -51,3 +51,4 @@ WHERE last_name NOT LIKE '%qu%'
   AND last_name LIKE '%q%';
 
 
+
