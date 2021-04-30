@@ -13,6 +13,7 @@ USE codeup_test_db;
 -- INSERT INTO albums (artist, name, release_date, sales, genre)
 -- VALUES ('Adele', '21', 2011, 30.8, 'Pop, soul');
 
+TRUNCATE albums;
 
 INSERT INTO albums (`artist`,`name`, `release_date`, `genre`, `sales`)
 VALUES
